@@ -1,0 +1,46 @@
+{
+  "stockIssueTokens": [
+    {
+      "id": "SIT-2001",
+      "reservationId": "RES-1001",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "clientName": "ABC Traders",
+      "commodity": "Rice",
+      "quantity": 150,
+      "deliveryOrderNo": "DO-78901",
+      "currentStep": "GATE_IN",
+      "status": "IN_PROGRESS",
+      "createdAt": "2024-08-05",
+      "remarks": "Truck arrived for dispatch"
+    },
+    {
+      "id": "SIT-2002",
+      "reservationId": "RES-1001",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "clientName": "ABC Traders",
+      "commodity": "Rice",
+      "quantity": 100,
+      "deliveryOrderNo": "DO-78902",
+      "currentStep": "STACK_OUT",
+      "status": "IN_PROGRESS",
+      "createdAt": "2024-08-06",
+      "remarks": "Stock picked from stack"
+    },
+    {
+      "id": "SIT-2003",
+      "reservationId": "RES-1003",
+      "warehouseId": "WH-02",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "clientName": "Sri Lakshmi Agencies",
+      "commodity": "Maize",
+      "quantity": 200,
+      "deliveryOrderNo": "DO-78110",
+      "currentStep": "COMPLETED",
+      "status": "COMPLETED",
+      "createdAt": "2024-07-15",
+      "remarks": "Stock issued successfully"
+    }
+  ]
+}

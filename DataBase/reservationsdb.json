@@ -1,0 +1,55 @@
+{
+  "reservations": [
+    {
+      "id": "RES-1001",
+      "clientName": "ABC Traders",
+      "clientType": "Existing",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Rice",
+      "spaceType": "Covered",
+      "requestedCapacity": 500,
+      "allocatedCapacity": 450,
+      "startDate": "2024-08-01",
+      "endDate": "2024-08-31",
+      "status": "ACTIVE",
+      "createdBy": "warehouse_manager",
+      "createdAt": "2024-07-25",
+      "remarks": "Initial reservation approved"
+    },
+    {
+      "id": "RES-1002",
+      "clientName": "Global Foods Pvt Ltd",
+      "clientType": "New",
+      "warehouseId": "WH-02",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "commodity": "Wheat",
+      "spaceType": "Open",
+      "requestedCapacity": 300,
+      "allocatedCapacity": 0,
+      "startDate": "2024-08-10",
+      "endDate": "2024-09-10",
+      "status": "SUBMITTED",
+      "createdBy": "warehouse_manager",
+      "createdAt": "2024-07-28",
+      "remarks": "Waiting for approval"
+    },
+    {
+      "id": "RES-1003",
+      "clientName": "Sri Lakshmi Agencies",
+      "clientType": "Existing",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Maize",
+      "spaceType": "Covered",
+      "requestedCapacity": 200,
+      "allocatedCapacity": 200,
+      "startDate": "2024-07-01",
+      "endDate": "2024-07-31",
+      "status": "CLOSED",
+      "createdBy": "warehouse_manager",
+      "createdAt": "2024-06-25",
+      "remarks": "Reservation completed and closed"
+    }
+  ]
+}

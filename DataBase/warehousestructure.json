@@ -1,0 +1,67 @@
+{
+  "godowns": [
+    {
+      "id": "GD-01",
+      "warehouseId": "WH-01",
+      "name": "Godown-A",
+      "type": "COVERED",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "GD-02",
+      "warehouseId": "WH-01",
+      "name": "Godown-B",
+      "type": "OPEN",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "GD-03",
+      "warehouseId": "WH-02",
+      "name": "Godown-A",
+      "type": "COVERED",
+      "status": "ACTIVE"
+    }
+  ],
+
+  "compartments": [
+    {
+      "id": "CP-01",
+      "godownId": "GD-01",
+      "name": "Comp-1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "CP-02",
+      "godownId": "GD-01",
+      "name": "Comp-2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "CP-03",
+      "godownId": "GD-02",
+      "name": "Comp-1",
+      "status": "ACTIVE"
+    }
+  ],
+
+  "stacks": [
+    {
+      "id": "ST-101",
+      "compartmentId": "CP-01",
+      "stackNumber": "ST-101",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "ST-102",
+      "compartmentId": "CP-01",
+      "stackNumber": "ST-102",
+      "status": "ALLOCATED"
+    },
+    {
+      "id": "ST-120",
+      "compartmentId": "CP-02",
+      "stackNumber": "ST-120",
+      "status": "AVAILABLE"
+    }
+  ]
+}

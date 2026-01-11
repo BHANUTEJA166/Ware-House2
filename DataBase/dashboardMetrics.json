@@ -1,0 +1,10 @@
+{
+  "dashboardMetrics": {
+    "reservationsCount": 42,
+    "pendingInward": 12,
+    "pendingOutward": 8,
+    "openInspections": 5,
+    "dayStatus": "OPEN"
+  }
+}
+

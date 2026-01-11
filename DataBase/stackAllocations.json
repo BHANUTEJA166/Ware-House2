@@ -1,0 +1,44 @@
+{
+  "stackAllocations": [
+    {
+      "id": "SA-001",
+      "reservationId": "RES-1001",
+      "warehouseId": "WH-01",
+      "godown": "Godown-A",
+      "compartment": "Comp-1",
+      "stackNumber": "ST-101",
+      "allocatedCapacity": 200,
+      "allocationDate": "2024-08-02",
+      "status": "ALLOCATED",
+      "remarks": "Initial stack allocation"
+    },
+    {
+      "id": "SA-002",
+      "reservationId": "RES-1001",
+      "warehouseId": "WH-01",
+      "godown": "Godown-A",
+      "compartment": "Comp-2",
+      "stackNumber": "ST-102",
+      "allocatedCapacity": 250,
+      "allocationDate": "2024-08-03",
+      "status": "ALLOCATED",
+      "remarks": "Additional allocation"
+    }
+  ],
+
+  "stackHistory": [
+    {
+      "id": "SH-001",
+      "reservationId": "RES-1003",
+      "warehouseId": "WH-01",
+      "godown": "Godown-B",
+      "compartment": "Comp-3",
+      "stackNumber": "ST-090",
+      "allocatedCapacity": 200,
+      "allocationDate": "2024-07-01",
+      "closedDate": "2024-07-31",
+      "status": "CLOSED",
+      "remarks": "Stock fully issued"
+    }
+  ]
+}

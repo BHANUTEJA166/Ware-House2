@@ -1,0 +1,37 @@
+{
+  "dayOperations": [
+    {
+      "id": "DAY-001",
+      "date": "2024-08-08",
+      "status": "OPEN",
+      "openedBy": "warehouse_manager",
+      "openedAt": "2024-08-08T08:45:00",
+      "closedBy": "",
+      "closedAt": "",
+      "remarks": "Day opened successfully"
+    }
+  ],
+
+  "dayOperationHistory": [
+    {
+      "id": "DAY-0001",
+      "date": "2024-08-07",
+      "status": "CLOSED",
+      "openedBy": "warehouse_manager",
+      "openedAt": "2024-08-07T08:40:00",
+      "closedBy": "warehouse_manager",
+      "closedAt": "2024-08-07T19:10:00",
+      "remarks": "Operations closed normally"
+    },
+    {
+      "id": "DAY-0002",
+      "date": "2024-08-06",
+      "status": "CLOSED",
+      "openedBy": "warehouse_manager",
+      "openedAt": "2024-08-06T08:35:00",
+      "closedBy": "warehouse_manager",
+      "closedAt": "2024-08-06T19:00:00",
+      "remarks": "All operations completed"
+    }
+  ]
+}

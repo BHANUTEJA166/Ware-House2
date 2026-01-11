@@ -1,0 +1,77 @@
+{
+  "reservationReports": [
+    {
+      "reservationId": "RES-1001",
+      "clientName": "ABC Traders",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Rice",
+      "allocatedCapacity": 450,
+      "status": "ACTIVE",
+      "period": "Aug 2024"
+    },
+    {
+      "reservationId": "RES-1003",
+      "clientName": "Sri Lakshmi Agencies",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Maize",
+      "allocatedCapacity": 200,
+      "status": "CLOSED",
+      "period": "Jul 2024"
+    }
+  ],
+
+  "stockReceiptReports": [
+    {
+      "tokenId": "SRT-1001",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Rice",
+      "quantity": 200,
+      "status": "IN_PROGRESS",
+      "date": "2024-08-02"
+    },
+    {
+      "tokenId": "SRT-1003",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "commodity": "Maize",
+      "quantity": 200,
+      "status": "COMPLETED",
+      "date": "2024-07-05"
+    }
+  ],
+
+  "stockIssueReports": [
+    {
+      "tokenId": "SIT-2001",
+      "warehouseName": "Central Warehouse - Medak",
+      "commodity": "Rice",
+      "quantity": 150,
+      "status": "IN_PROGRESS",
+      "date": "2024-08-05"
+    },
+    {
+      "tokenId": "SIT-2003",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "commodity": "Maize",
+      "quantity": 200,
+      "status": "COMPLETED",
+      "date": "2024-07-15"
+    }
+  ],
+
+  "inspectionReports": [
+    {
+      "inspectionId": "INSP-7001",
+      "inspectionType": "PHYSICAL",
+      "warehouseName": "Central Warehouse - Medak",
+      "status": "CREATED",
+      "scheduledDate": "2024-08-10"
+    },
+    {
+      "inspectionId": "INSP-7003",
+      "inspectionType": "GENERAL",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "status": "COMPLETED",
+      "scheduledDate": "2024-08-05"
+    }
+  ]
+}

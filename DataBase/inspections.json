@@ -1,0 +1,49 @@
+{
+  "inspections": [
+    {
+      "id": "INSP-7001",
+      "inspectionType": "PHYSICAL",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "targetType": "STACK",
+      "targetReference": "ST-101",
+      "status": "CREATED",
+      "assignedTo": "",
+      "scheduledDate": "2024-08-10",
+      "findings": "",
+      "reportSubmitted": false,
+      "createdAt": "2024-08-08",
+      "remarks": "Physical verification initiated"
+    },
+    {
+      "id": "INSP-7002",
+      "inspectionType": "TECHNICAL",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "targetType": "GODOWN",
+      "targetReference": "Godown-A",
+      "status": "ASSIGNED",
+      "assignedTo": "technical_inspector",
+      "scheduledDate": "2024-08-11",
+      "findings": "",
+      "reportSubmitted": false,
+      "createdAt": "2024-08-07",
+      "remarks": "Technical inspection scheduled"
+    },
+    {
+      "id": "INSP-7003",
+      "inspectionType": "GENERAL",
+      "warehouseId": "WH-02",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "targetType": "WAREHOUSE",
+      "targetReference": "WH-02",
+      "status": "COMPLETED",
+      "assignedTo": "general_inspector",
+      "scheduledDate": "2024-08-05",
+      "findings": "Overall operations found satisfactory",
+      "reportSubmitted": true,
+      "createdAt": "2024-08-04",
+      "remarks": "Inspection completed successfully"
+    }
+  ]
+}

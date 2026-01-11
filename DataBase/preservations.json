@@ -1,0 +1,29 @@
+{
+  "preservations": [
+    {
+      "id": "PR-001",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "activityType": "FUMIGATION",
+      "status": "IN_PROGRESS",
+      "scheduledDate": "2024-08-12",
+      "performedBy": "maintenance_team",
+      "remarks": "Fumigation in progress"
+    }
+  ],
+
+  "preservationHistory": [
+    {
+      "id": "PRH-001",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "activityType": "PEST_CONTROL",
+      "status": "COMPLETED",
+      "scheduledDate": "2024-07-20",
+      "completedDate": "2024-07-20",
+      "performedBy": "maintenance_team",
+      "remarks": "Completed successfully"
+    }
+  ]
+}
+

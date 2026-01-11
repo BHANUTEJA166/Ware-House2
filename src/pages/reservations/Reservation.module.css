@@ -1,0 +1,20 @@
+.pageWrapper {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.pageHeader {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.tableHead {
+  background-color: #f1f5f9;
+}
+
+.statusBadge {
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: #e2e3e5;
+}

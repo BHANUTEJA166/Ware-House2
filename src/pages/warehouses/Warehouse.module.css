@@ -1,0 +1,41 @@
+.pageWrapper {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.pageHeader {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.pageHeader h4 {
+  margin-bottom: 4px;
+  color: #1d6fb8;
+}
+
+.pageHeader p {
+  font-size: 13px;
+  color: #555;
+}
+
+.tableWrapper {
+  margin-top: 15px;
+}
+
+.tableHead {
+  background-color: #f1f5f9;
+  font-size: 13px;
+}
+
+.activeStatus {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.detailCard {
+  margin-top: 20px;
+  width: 60%;
+}

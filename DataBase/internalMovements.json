@@ -1,0 +1,58 @@
+{
+  "internalMovements": [
+    {
+      "id": "IM-3001",
+      "movementType": "INTRA_GODOWN",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "sourceGodown": "Godown-A",
+      "sourceCompartment": "Comp-1",
+      "sourceStack": "ST-101",
+      "destinationGodown": "Godown-A",
+      "destinationCompartment": "Comp-2",
+      "destinationStack": "ST-120",
+      "commodity": "Rice",
+      "quantity": 100,
+      "currentStep": "STACK_OUT",
+      "status": "IN_PROGRESS",
+      "createdAt": "2024-08-07",
+      "remarks": "Stock moved within same godown"
+    },
+    {
+      "id": "IM-3002",
+      "movementType": "INTER_GODOWN",
+      "warehouseId": "WH-01",
+      "warehouseName": "Central Warehouse - Medak",
+      "sourceGodown": "Godown-B",
+      "sourceCompartment": "Comp-3",
+      "sourceStack": "ST-090",
+      "destinationGodown": "Godown-C",
+      "destinationCompartment": "Comp-1",
+      "destinationStack": "ST-150",
+      "commodity": "Wheat",
+      "quantity": 200,
+      "currentStep": "STACKING",
+      "status": "IN_PROGRESS",
+      "createdAt": "2024-08-08",
+      "remarks": "Transferred to another godown"
+    },
+    {
+      "id": "IM-3003",
+      "movementType": "INTRA_GODOWN",
+      "warehouseId": "WH-02",
+      "warehouseName": "Regional Warehouse - Hyderabad",
+      "sourceGodown": "Godown-A",
+      "sourceCompartment": "Comp-2",
+      "sourceStack": "ST-055",
+      "destinationGodown": "Godown-A",
+      "destinationCompartment": "Comp-4",
+      "destinationStack": "ST-099",
+      "commodity": "Maize",
+      "quantity": 150,
+      "currentStep": "COMPLETED",
+      "status": "COMPLETED",
+      "createdAt": "2024-07-20",
+      "remarks": "Movement completed successfully"
+    }
+  ]
+}

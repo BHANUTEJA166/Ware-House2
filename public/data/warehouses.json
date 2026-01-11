@@ -1,0 +1,372 @@
+{
+  "warehouses": [
+    {
+      "id": "1",
+      "code": "CWC-MDK-01",
+      "name": "Central Warehouse, Medak",
+      "location": "Medak District, Telangana",
+      "capacity": "50000 MT",
+      "utilizedCapacity": "18500 MT",
+      "warehouseType": "General Storage",
+      "managedBy": "Central Warehousing Corporation",
+      "status": "Active",
+      "createdOn": "2018-06-12"
+    },
+    {
+      "id": "2",
+      "code": "CWC-HYD-02",
+      "name": "Regional Warehouse, Hyderabad",
+      "location": "Hyderabad, Telangana",
+      "capacity": "30000 MT",
+      "utilizedCapacity": "11200 MT",
+      "warehouseType": "Covered Storage",
+      "managedBy": "Central Warehousing Corporation",
+      "status": "Active",
+      "createdOn": "2020-03-18"
+    },
+    {
+      "id": "3",
+      "code": "CWC-NZB-03",
+      "name": "Sub Warehouse, Nizamabad",
+      "location": "Nizamabad, Telangana",
+      "capacity": "20000 MT",
+      "utilizedCapacity": "0 MT",
+      "warehouseType": "Sub Storage",
+      "managedBy": "Central Warehousing Corporation",
+      "status": "Inactive",
+      "createdOn": "2023-11-20"
+    }
+  ],
+  "godowns": [
+    {
+      "id": "101",
+      "warehouseId": 1,
+      "code": "GD-MDK-01",
+      "name": "Godown A",
+      "storageType": "Covered",
+      "capacity": "12000 MT",
+      "utilizedCapacity": "4500 MT",
+      "status": "Active",
+      "createdOn": "2019-01-10"
+    },
+    {
+      "id": "102",
+      "warehouseId": 1,
+      "code": "GD-MDK-02",
+      "name": "Godown B",
+      "storageType": "Open Plinth",
+      "capacity": "8000 MT",
+      "utilizedCapacity": "3200 MT",
+      "status": "Active",
+      "createdOn": "2019-06-22"
+    },
+    {
+      "id": "201",
+      "warehouseId": 2,
+      "code": "GD-HYD-01",
+      "name": "Godown C",
+      "storageType": "Covered",
+      "capacity": "15000 MT",
+      "utilizedCapacity": "6100 MT",
+      "status": "Active",
+      "createdOn": "2020-08-15"
+    }
+  ],
+  "compartments": [
+    {
+      "id": "1001",
+      "godownId": 101,
+      "code": "CMP-A-01",
+      "name": "Compartment A1",
+      "commodityType": "Wheat",
+      "capacity": 4000,
+      "utilizedCapacity": 1800,
+      "floorType": "Concrete",
+      "status": "Active"
+    },
+    {
+      "id": "1002",
+      "godownId": 101,
+      "code": "CMP-A-02",
+      "name": "Compartment A2",
+      "commodityType": "Rice",
+      "capacity": 3500,
+      "utilizedCapacity": 2100,
+      "floorType": "Concrete",
+      "status": "Active"
+    },
+    {
+      "id": "2001",
+      "godownId": 102,
+      "code": "CMP-B-01",
+      "name": "Compartment B1",
+      "commodityType": "Pulses",
+      "capacity": 3000,
+      "utilizedCapacity": 900,
+      "floorType": "Asphalt",
+      "status": "Active"
+    }
+  ],
+  "stacks": [
+    {
+      "id": "5001",
+      "compartmentId": 1001,
+      "stackNo": "ST-A1-01",
+      "commodity": "Wheat",
+      "bagType": "50 Kg Bags",
+      "totalBags": 4000,
+      "availableBags": 2200,
+      "condition": "Good",
+      "status": "Active"
+    },
+    {
+      "id": "5002",
+      "compartmentId": 1001,
+      "stackNo": "ST-A1-02",
+      "commodity": "Wheat",
+      "bagType": "50 Kg Bags",
+      "totalBags": 3500,
+      "availableBags": 1800,
+      "condition": "Good",
+      "status": "Active"
+    },
+    {
+      "id": "6001",
+      "compartmentId": 1002,
+      "stackNo": "ST-A2-01",
+      "commodity": "Rice",
+      "bagType": "50 Kg Bags",
+      "totalBags": 3000,
+      "availableBags": 1200,
+      "condition": "Average",
+      "status": "Active"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "9001",
+      "reservationNo": "RSV-2024-001",
+      "warehouseId": 1,
+      "godownId": 101,
+      "compartmentId": 1001,
+      "stackId": 5001,
+      "commodity": "Wheat",
+      "requestedBags": 1500,
+      "reservedBags": 1500,
+      "depositorName": "FCI – Medak",
+      "requestedDate": "2024-07-01",
+      "status": "APPROVED",
+      "remarks": "Space reserved for procurement"
+    },
+    {
+      "id": "9002",
+      "reservationNo": "RSV-2024-002",
+      "warehouseId": 1,
+      "godownId": 102,
+      "compartmentId": 2001,
+      "stackId": 6001,
+      "commodity": "Pulses",
+      "requestedBags": 800,
+      "reservedBags": 0,
+      "depositorName": "State Procurement Agency",
+      "requestedDate": "2024-07-03",
+      "status": "PENDING",
+      "remarks": ""
+    }
+  ],
+  "stackAllocations": [
+    {
+      "id": "3001",
+      "reservationId": 9001,
+      "reservationNo": "RSV-2024-001",
+      "stackId": 5001,
+      "stackNo": "ST-A1-01",
+      "allocatedBags": 1500,
+      "allocatedBy": "Warehouse Manager",
+      "allocatedDate": "2024-07-02",
+      "status": "ALLOCATED"
+    },
+    {
+      "id": "7ae5",
+      "reservationId": "9001",
+      "reservationNo": "95785",
+      "stackId": "",
+      "stackNo": "555",
+      "allocatedBags": "45",
+      "allocatedBy": "Warehouse Manager",
+      "allocatedDate": "2025-12-29",
+      "status": "ALLOCATED"
+    },
+    {
+      "id": "7eb1",
+      "reservationId": "9001",
+      "reservationNo": "RVG-25",
+      "stackId": "",
+      "stackNo": "ST-786",
+      "allocatedBags": "200",
+      "allocatedBy": "Warehouse Manager",
+      "allocatedDate": "2025-12-29",
+      "status": "ALLOCATED"
+    }
+  ],
+  "allocationHistory": [
+    {
+      "id": "1",
+      "reservationNo": "RSV-2024-001",
+      "action": "STACK ALLOCATED",
+      "performedBy": "Warehouse Manager",
+      "performedOn": "2024-07-02"
+    }
+  ],
+  "stockReceiptTokens": [
+    {
+      "id": "7001",
+      "tokenNo": "IN-2024-001",
+      "reservationNo": "RSV-2024-001",
+      "stackNo": "ST-A1-01",
+      "commodity": "Wheat",
+      "expectedBags": 1500,
+      "receivedBags": 0,
+      "status": "PENDING",
+      "createdOn": "2024-07-03"
+    }
+  ],
+  "stockReceipts": [
+    {
+      "id": "8001",
+      "tokenNo": "IN-2024-001",
+      "receivedBags": 1500,
+      "receivedBy": "Warehouse Supervisor",
+      "receivedDate": "2024-07-04",
+      "remarks": "Stock received in good condition"
+    },
+    {
+      "id": "0242",
+      "tokenNo": "IN-2024-001",
+      "receivedBags": "200",
+      "remarks": "ALL IN GOOD QUALITY",
+      "receivedBy": "Warehouse Supervisor",
+      "receivedDate": "2025-12-29"
+    },
+    {
+      "id": "0803",
+      "tokenNo": "IN-2024-001",
+      "receivedBags": "324",
+      "remarks": "EWRG",
+      "receivedBy": "Warehouse Supervisor",
+      "receivedDate": "2025-12-29"
+    },
+    {
+      "id": "2bf9",
+      "tokenNo": "IN-2024-001",
+      "receivedBags": "500",
+      "remarks": "good quality",
+      "receivedBy": "Warehouse Supervisor",
+      "receivedDate": "2025-12-30"
+    },
+    {
+      "id": "f024",
+      "tokenNo": "IN-2024-001",
+      "receivedBags": "1500",
+      "remarks": "Good",
+      "receivedBy": "Warehouse Supervisor",
+      "receivedDate": "2025-12-30"
+    }
+  ],
+  "stockIssueTokens": [
+    {
+      "id": "SIT-1001",
+      "allocationId": "ALLOC-2001",
+      "warehouse": "Hyderabad Central Warehouse",
+      "commodity": "Rice",
+      "quantity": 200,
+      "unit": "Quintal",
+      "requestedBy": "Food Corporation",
+      "status": "PENDING",
+      "requestedDate": "2024-09-15"
+    },
+    {
+      "id": "SIT-1002",
+      "allocationId": "ALLOC-2002",
+      "warehouse": "Medak Warehouse",
+      "commodity": "Wheat",
+      "quantity": 150,
+      "unit": "Quintal",
+      "requestedBy": "Civil Supplies",
+      "status": "APPROVED",
+      "requestedDate": "2024-09-14"
+    }
+  ],
+  "stockIssues": [
+    {
+      "id": "ISS-5001",
+      "tokenId": "SIT-1002",
+      "vehicleNumber": "TS09AB1234",
+      "driverName": "Ramesh",
+      "issuedQuantity": 150,
+      "issueDate": "2024-09-16",
+      "status": "ISSUED"
+    },
+    {
+      "id": "a8af",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "7788998877",
+      "driverName": "khan",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    },
+    {
+      "id": "a77e",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "7788998877",
+      "driverName": "khan",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    },
+    {
+      "id": "c25d",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "7788998877",
+      "driverName": "khan",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    },
+    {
+      "id": "3be0",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "7788998877",
+      "driverName": "khan",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    },
+    {
+      "id": "b734",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "4574564564564",
+      "driverName": "fhfhxf",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    },
+    {
+      "id": "36bd",
+      "tokenId": "SIT-1001",
+      "vehicleNumber": "drgre",
+      "driverName": "dfhfshs",
+      "issuedQuantity": 200,
+      "issueDate": "2025-12-30",
+      "status": "ISSUED"
+    }
+  ],
+  "dashboardMetrics": {
+    "reservationsCount": 42,
+    "pendingInward": 12,
+    "pendingOutward": 8,
+    "openInspections": 5,
+    "dayStatus": "OPEN"
+  }
+}
