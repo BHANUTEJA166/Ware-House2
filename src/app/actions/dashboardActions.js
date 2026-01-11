@@ -5,7 +5,7 @@ export const fetchDashboardMetrics = () => {
     dispatch({ type: "FETCH_DASHBOARD_REQUEST" });
 
     try {
-      const res = await axios.get("http://localhost:5000/dashboardMetrics");
+      const res = await axios.get("/data/warehouses.json");
 
       dispatch({
         type: "FETCH_DASHBOARD_SUCCESS",
