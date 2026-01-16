@@ -141,7 +141,7 @@ const Login = () => {
 
         {/* Footer */}
         <footer className={styles.footer}>
-          © 2024 Warehouse Management System. All Rights Reserved.
+          © 2026 Warehouse Management System. All Rights Reserved.
         </footer>
       </div>
     </div>
